@@ -22,7 +22,7 @@ function showPopup(icon) {
   const languageInfo = languageData.find(lang => lang.name === languageName);
   popupContainer.innerHTML = `<h2>${languageInfo.title}</h2>
   <p>${languageInfo.description}</p>`;
-  popupContainer.classList.add('visible');
+  popupContainer.classList.remove('hidden');
   console.log(popupContainer); 
 }
 
@@ -34,6 +34,6 @@ languageIcons.forEach(icon => {
 
 if (closeButton) {
     closeButton.addEventListener('click', () => {
-      popupContainer.classList.remove('visible');
+      popupContainer.classList.add('hidden');
     });
   } 

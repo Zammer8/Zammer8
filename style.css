@@ -124,7 +124,7 @@ h2 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  display: none;
+  display: block;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
@@ -148,6 +148,6 @@ h2 {
   cursor: pointer;
 }
 
-.visible {
-  visibility: visible;
+.hidden {
+  display: none;
 }

@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
@@ -30,7 +31,8 @@
         />
         <h1>@Zammer8</h1>
       </header>
-      <ul>
+      <h2>Links</h2>
+      <ul class="links">
         <li>
           <a
             href="https://discord.com/users/1191049693485076651/"
@@ -62,6 +64,25 @@
           >
         </li>
       </ul>
+      <h2>Languages</h2>
+      <div class="languages">
+        <img class="language-icon" id="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+        <img class="language-icon" id="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+      </div>
+
+      <div class="popup-container visible" id="popup">
+        <div class="popup-content">
+          <div class="popup-header">
+            <h2 style="display: inline;">Oh no! Something went wrong!</h2>
+            <button style="display: inline;" class="close-button">X</button>
+          </div>
+          <div class="popup-body">
+            <p>More information about the selected item should appear here. Please report this on GitHub if it occurs repeatedly.</p>
+          </div>
+        </div>
+      </div>
+
+      <script src="scripts.js"></script>
     </main>
   </body>
 </html>
